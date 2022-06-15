@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Lista de Empleados"
+             x:Class="CRUD_Final.Views.GetAllCompaniesPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="LISTA DE EMPLEADOS"
+                   FontSize="20"
+                   TextColor="White"/>
+            <ListView x:Name="listaxdxd">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Label Text="{Binding Id}"/>
+                                
+                                <Label Grid.Column ="1"
+                                       Text="{Binding Name}"/>
+                                <Label Grid.Column="2"
+                                 
+                                    Text="{Binding Address}"/>
+                                
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

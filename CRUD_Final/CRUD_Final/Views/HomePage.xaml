@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="LISTA DE EMPLEADOS"
+             x:Class="CRUD_Final.Views.HomePage">
+    <ContentPage.Content>
+        <StackLayout >
+            <Image Source="empleado.jpg" Margin="0,20,0,0"/>
+            <Grid Grid.Row="0" Margin="0,30,0,0">
+            <Button Text="Agregar Empleado"
+                    x:Name="btn_agregar"
+                    TextColor="Bisque"
+                        Background="gray"
+                        BorderColor="Bisque"
+                        BorderWidth="3"
+                        CornerRadius="40"
+                    Clicked="btn_agregar_Clicked"/>
+            </Grid>
+            <Grid Grid.Row="1" Margin="0,30,0,0">
+                <Button Text="Ver Lista"
+                    x:Name="btn_ver"
+                    TextColor="White"
+                        Background="gray"
+                        BorderColor="GreenYellow"
+                        BorderWidth="3"
+                        CornerRadius="40"
+                    Clicked="btn_ver_Clicked"/>
+
+            </Grid>
+            <Grid Grid.Row="2" Margin="0,30,0,0">
+                <Button Text="Editar Lista"
+                    x:Name="btn_Edit"
+                    TextColor="red"
+                        Background="blue"
+                        BorderColor="red"
+                        BorderWidth="3"
+                        CornerRadius="40"
+                    Clicked="btn_Edit_Clicked"/>
+            </Grid>
+            
+            <Grid Grid.Row="3" Margin="0,30,0,0">
+                <Button Text="Eliminar Empleado"
+                    x:Name="btn_Delete"
+                    TextColor="Blue"
+                        Background="red"
+                        BorderColor="Blue"
+                        BorderWidth="3"
+                        CornerRadius="40"
+                    Clicked="btn_Delete_Clicked"/>
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

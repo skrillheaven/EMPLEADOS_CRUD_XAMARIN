@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Agregar Empleado"
+             x:Class="CRUD_Final.Views.AddCompanyPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                     Padding="32"
+                     Spacing="10">
+            
+            <Entry x:Name="txtName"
+                   Placeholder="Nombre del empleado"/>
+
+            <Entry x:Name="txtAddress"
+                   Placeholder="Direccion"/>
+
+            <Button Text="Agregar"
+                    x:Name="btn_Add"
+                    Clicked="btn_Add_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
